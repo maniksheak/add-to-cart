@@ -23,10 +23,24 @@
                                 </v-row>
                             </template>
                         </v-img>
-                        <p class="px-3 py-4"> {{ product.title }}</p>
-                        <p class="px-3"> {{ product.price }}</p>
+                         <v-card-title class="text-capitalize">
+                              {{ product.title }}
+                         </v-card-title>
+        
+                          <v-card-subtitle >
+                              {{ product.price }}
+                          </v-card-subtitle>
 
-                        <v-btn class="bg-primary">Submit</v-btn>
+                        <v-card-actions>
+                             <v-btn color="bg-primary"> Read More</v-btn>
+                             <v-spacer></v-spacer>
+                             <!-- <v-btn class="bg-primary" @click="cartStore.add(product.id)">
+                                Add to Cart
+                             </v-btn> -->
+                             <v-btn class="primary">
+                                Add to Cart
+                             </v-btn>
+                        </v-card-actions>
                     </v-card>
                 </v-col>
             </v-row>
