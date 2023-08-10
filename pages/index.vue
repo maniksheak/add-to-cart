@@ -2,7 +2,6 @@
 <template>
   <div>
    <items></items>
-
   </div>
 </template>
 

@@ -4,7 +4,7 @@
             Shopping Cart Website
         </v-toolbar-title>
         <v-spacer></v-spacer>
-        <v-btn class="mx-4 text-none" stacked>
+        <v-btn class="mx-4 text-none" @click="goCart">
             <v-badge :content="1" color="error">
                 <v-icon>mdi-cart-outline</v-icon>
             </v-badge>
@@ -17,9 +17,15 @@
 </template>
 
 <script >
-export default {
 
+export default {
+    methods: {
+        goCart() {
+            this.$router.push('/cart')
+            // console.log('ddd');
+        }
+    }
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style  scoped></style>
